@@ -1,0 +1,1 @@
+Invoke-RestMethod -Uri http://localhost:3000/upload-metadata -Method Post -Body (@{ filename="vacation_photo.jpg"; size=2048576; type="image/jpeg"; uploader="mark_wayne" } | ConvertTo-Json) -ContentType "application/json"
