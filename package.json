@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-rabbitmq-sample",
+  "version": "1.0.0",
+  "description": "Node.js RabbitMQ File Upload Metadata Sample",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:producer": "nodemon --exec \"node --loader ts-node/esm\" src/producer.ts",
+    "start:consumer": "nodemon --exec \"node --loader ts-node/esm\" src/consumer.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "amqplib": "^1.2.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.8",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.2",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
